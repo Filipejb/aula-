@@ -6,7 +6,7 @@ int main(){
 
   soma = A[0] + A[1] + A[5];
 
-  //  printf("%d\n", soma);
+   printf("%d\n", soma);
 
   A[4] = 100;
 
