@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int main(){
+  int V[10];
+  int ma,me,i;
+
+  for( i = 0; i <10;i++){
+    printf("digite um valor");
+    scanf("%d", &V[i]);
+  }
+   ma = V[0];
+   me = V[0];
+   for(i = 0; i <10;i++){
+     if(V[i] > ma ){
+       ma = V[i];
+    
+     } else if (V[i] < me){
+       me = V[i];
+     }
+  }
+
+   printf("maior:%d\n", ma);
+   printf("menor:%d\n", me);
+
+}
