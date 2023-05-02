@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int par[6];
+    
+    
+    for (int i = 0; i < 6; i++) {
+        do {
+            printf("Digite os valores pares: ");
+            scanf("%d", &par[i]);
+        } while (par[i] % 2 != 0);
+    }
+    
+ 
+    printf("Valores pares na ordem inversa: ");
+    for (int i = 5; i >= 0; i--) {
+        printf("%d ", par[i]);
+    }
+    
+    return 0;
+}
