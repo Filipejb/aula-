@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    float nota[15];
+    float med = 0;
+    
+  
+    for (int i = 0; i < 15; i++) {
+        printf("Digite as notas dos  alunos: ");
+        scanf("%f", &nota[i]);
+        med += nota[i];
+    }
+    
+  
+    med /= 15;
+    printf("A media geral das notas eh: %.2f", med);
+    
+    return 0;
+}
