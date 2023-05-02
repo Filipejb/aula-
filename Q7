@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main() {
+    int num[10];
+    int ma = 0;
+    int pos_ma = 0;
+    
+    
+    for (int i = 0; i < 10; i++) {
+        printf("Digite os numero: ");
+        scanf("%d", &num[i]);
+        
+       
+        if (num[i] > ma) {
+            ma = num[i];
+            pos_ma = i;
+        }
+    }
+    
+  
+    printf("Vetor: [");
+    for (int i = 0; i < 10; i++) {
+        printf("%d", num[i]);
+        if (i < 9) printf(", ");
+    }
+    printf("]\n");
+    
+    
+    printf("Maior elemento: %d\n", ma);
+    printf("Posicao do maior elemento: %d\n", pos_ma);
+    
+    return 0;
+}
